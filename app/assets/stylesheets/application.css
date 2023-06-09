@@ -14,3 +14,14 @@
  *= require styles.css
  *= require_self
  */
+
+body {
+    background: #ddd;
+}
+
+.post-meta {
+    background: #ddd;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+}
