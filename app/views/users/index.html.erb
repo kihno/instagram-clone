@@ -1,0 +1,7 @@
+<%= link_to "New Post", new_post_path, class: "btn btn-success" %>
+
+<div id="posts">
+  <% @posts.each do |post| %>
+    <%= image_tag post.image, style: "object-fit:contain; width: 200px; height: 200px" %>
+  <% end %>
+</div>
