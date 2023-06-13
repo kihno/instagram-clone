@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   get "/dashboard" => "users#index"
+  get "profile/:username" => "users#profile", as: :profile
 
   resources :posts, only: [:new, :show, :create]
 

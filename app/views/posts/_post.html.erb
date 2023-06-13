@@ -1,7 +1,7 @@
-<div>
-  <div class="text-centerfw-bold p-10">
+<div class="border">
+  <div class="text-right fw-bold p-2 border-bottom bg-white">
     <%= post.user.username %>
   </div>
 
-  <%= image_tag post.image, style: "object-fit:contain; width: 200px; height: 200px" %>
+  <%= image_tag post.image, style: "object-fit:contain", class: "w-100" %>
 </div>

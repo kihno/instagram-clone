@@ -1,5 +1,20 @@
-<div id="posts">
-  <% @posts.each do |post| %>
-    <%= render "posts/post", post: post %> 
-  <% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <div id="posts" class="justify-content-center">
+        <% @posts.each do |post| %>
+          <%= render "posts/post", post: post %> 
+        <% end %>
+      </div>
+    </div>
+    <div class="col-4">
+        <div class="">
+          <span class="fw-bold"><%= current_user.username %></span> <br />
+          <span><%= current_user.full_name %></span>
+        </div>
+        <div class="p-2 bg-white border rounded">
+
+        </div>
+      </div>
+  </div>
 </div>
